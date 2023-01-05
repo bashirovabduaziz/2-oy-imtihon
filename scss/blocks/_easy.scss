@@ -1,0 +1,215 @@
+.easy {
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 139px;
+    }
+
+    &__left {
+        max-width: 445px;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $mono;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #495567;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        width: 445px;
+        height: 100px;
+        margin-top: 24px;
+    }
+
+    &__btn {
+        padding: 14px 39px;
+        color: $white;
+        background-color: $yellow;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: $mono;
+        transition: all 0.1s ease;
+        border: none;
+        
+        &:hover {
+           background-color: white;
+           color: $yellow;
+           box-shadow: inset 0 0 0 3px $yellow;
+        }
+    }
+
+    &__right {
+        position: relative;
+        width: 740px;
+        margin-left: 83px;
+    }
+    &__right::before {
+        content: "";
+        display: inline-block;
+        width: 740px;
+        height: 150px;
+        background-image: url(./../../images/easy-line.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        max-width: 740px;
+        width: 100%;
+        position: absolute;
+        top: 315px;
+        left: 0;
+        transform: translateX(-65px);
+        z-index: 1;
+    }
+    &__right::after {
+        content: "";
+        display: inline-block;
+        width: 445px;
+        height: 445px;
+        background-image: url(./../../images/easy-egg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        max-width: 740px;
+        width: 100%;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        transform: translateX(220px);
+    }
+
+    &__pic {
+       
+    }
+
+    &__img {
+        width: 445px;
+        height: 445px;
+        object-fit: contain;
+    }
+   
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .easy {
+        background-color: yellow;
+
+        &__main {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+    
+        &__left {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        &__title {
+            font-family: $mono;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            color: #495567;
+        }
+    
+        &__text {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+            width: 445px;
+            height: 100px;
+            margin-top: 24px;
+        }
+    
+        &__btn {
+            padding: 14px 39px;
+            color: $white;
+            background-color: $yellow;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            font-family: $mono;
+            transition: all 0.1s ease;
+            border: none;
+            
+            &:hover {
+               background-color: white;
+               color: $yellow;
+               box-shadow: inset 0 0 0 3px $yellow;
+            }
+        }
+    
+        &__right {
+            position: relative;
+            margin-left: 220px;
+        }
+        &__right::before {
+            content: "";
+            display: inline-block;
+            width: 740px;
+            height: 150px;
+            background-image: url(./../../images/easy-line.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            max-width: 740px;
+            width: 100%;
+            position: absolute;
+            top: 315px;
+            left: 0;
+            transform: translateX(-65px);
+            z-index: 1;
+        }
+        &__right::after {
+            content: "";
+            display: inline-block;
+            width: 445px;
+            height: 445px;
+            background-image: url(./../../images/easy-egg.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            max-width: 740px;
+            width: 100%;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            transform: translateX(405px);
+        }
+    
+        &__pic {
+            display: block;
+            justify-content: center;
+          
+        }
+    
+        &__img {
+            width: 445px;
+            height: 445px;
+            object-fit: contain;
+            margin-left: 110px;
+            margin-right: 170px;
+        }
+       
+        
+        
+    }
+}
+
+
+

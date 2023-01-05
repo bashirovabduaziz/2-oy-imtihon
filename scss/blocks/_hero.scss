@@ -1,0 +1,85 @@
+.hero {
+   background-color: $dark-navy;
+   margin-bottom: 160px;
+   
+   .container-big  {
+      background-image: url("./../images/hero-bg.jpg");
+      background-size: cover;
+      background-position: center;
+   }
+   
+   &__container {
+      padding: 152px 0;
+   }
+   
+   &__wrapper {
+      max-width: 500px;
+      width: 100%;
+   }
+   
+   &__heading {
+      font-size: 56px;
+      line-height: 56px;
+      font-family: $mono, monospace;
+      color: $white;
+      letter-spacing: -2.5px;
+      margin-bottom: 40px;
+   }
+   
+   &__text {
+      position: relative;
+      font-size: 15px;
+      line-height: 25px;
+      font-family: $deca, monospace;
+      color: $white;
+      margin-bottom: 40px;
+      margin-left: 95px;
+      
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: 100%;
+         transform: translate(-57px, -50%);
+         display: inline-block;
+         width: 202px;
+         height: 15px;
+         background-color: $yellow;
+      }
+      
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 100%;
+         transform: translate(40px, -5%);
+         display: inline-block;
+         width: 447px;
+         height: 146px;
+         background-image: url("./../images/hero-arrow.svg");
+         background-repeat: no-repeat;
+         background-size: contain;
+      }
+   }
+   
+   &__link {
+      margin-left: 95px;
+      text-decoration: none;
+      
+      &:hover {
+         background: none;
+      }
+   }
+}
+
+@media only screen and (max-width: 1007px) {
+   .hero {
+      
+      margin-bottom: 116px;
+
+      .container-big {
+         max-width: 900px;
+         width: 100%;
+      }
+   }
+}
